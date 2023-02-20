@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(194, 211, 227);
+}
+
+.margin:not(:last-child) {
+  margin-right: 44px;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: row;
+}
