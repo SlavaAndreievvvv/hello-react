@@ -1,9 +1,10 @@
 import styles from './App.module.css'
-import { Notification } from '../components/Notification';
+import { Notification } from '../components/Notification'
+
 
 
 export const App = () => {
-  return (
+ return (
     <div className={styles.container}>
       <div className={styles.cardList}>
         <Notification variant="warning" className={styles.margin}>Notification</Notification>

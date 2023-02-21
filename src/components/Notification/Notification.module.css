@@ -4,7 +4,10 @@
   padding: 15px 49px 15px 18px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: all .3s ease;
 }
+
 .message {
   font-weight: 500;
   font-size: 14px;
@@ -21,11 +24,23 @@
 .warning {
   background-color: #FD9B00;
 }
+.warning:hover {
+  box-shadow: 0 0 2px 1px #FD9B00;
+}
 
 .success {
   background-color: #14B985;
 }
+.success:hover {
+  box-shadow: 0 0 2px 1px #14B985;
+}
 
 .error {
   background-color: #FF3F54;
+}
+.error:hover {
+  box-shadow: 0 0 2px 1px #FF3F54;
+}
+.container:active {
+  box-shadow: 0 0 0 1px white;
 }

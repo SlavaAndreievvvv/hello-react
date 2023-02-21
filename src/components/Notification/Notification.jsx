@@ -6,11 +6,14 @@ import warningIcon from '../../assets/warning.svg'
 import errorIcon from '../../assets/error.svg'
 
 export const Notification = ({variant, className, children}) => {
+  const onClick = () => {
+    alert(variant);
+  }
   return (
-    <div className={clsx(styles.container, styles[variant], className)}>
+    <button onClick={onClick} className={clsx(styles.container, styles[variant], className)}>
       <img src={icons[variant]} alt={variant} className={styles.icon} />
       <span className={styles.message}>{children}</span>
-    </div>
+    </button>
   )
 };
 
