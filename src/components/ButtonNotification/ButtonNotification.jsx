@@ -1,11 +1,11 @@
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
-import styles from './Notification.module.css'
+import styles from './ButtonNotification.module.css'
 import successIcon from '../../assets/success.svg'
 import warningIcon from '../../assets/warning.svg'
 import errorIcon from '../../assets/error.svg'
 
-export const Notification = ({variant, className, children}) => {
+export const ButtonNotification = ({variant, className, children}) => {
   const onClick = () => {
     alert(variant);
   }
@@ -17,13 +17,13 @@ export const Notification = ({variant, className, children}) => {
   )
 };
 
-Notification.propTypes = {
+ButtonNotification.propTypes = {
   className: PropTypes.string,
   className: PropTypes.string.isRequired,
   variant: PropTypes.oneOf(['warning', 'success', 'error'])
 }
 
-Notification.defaultProps = {
+ButtonNotification.defaultProps = {
   variant: 'success'
 }
 
