@@ -17,3 +17,15 @@
   height: 24px;
   margin-right: 21px;
 }
+
+.warning {
+  background-color: #FD9B00;
+}
+
+.success {
+  background-color: #14B985;
+}
+
+.error {
+  background-color: #FF3F54;
+}
